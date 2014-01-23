@@ -3,83 +3,51 @@ $black: #000000
 $orange: #ff8c00
 $red: #ff0000
 $white: #ffffff
-.nav
-  width: 100%
-  background: $black
-.label-red
-  color: $red
-.label-orange
-  color: $orange
-.btn
+
+.media
+  margin: 10px
+.media, .bd
+  overflow: hidden
+  _overflow: visible
+  zoom: 1
+
+.media .img
+  float: left
+  margin-right:  10px
+  margin-top:  7px
+
+.media .img img
+  display: block
+
+.media .imgExt
+  float: right
+  margin-left: 10px
+
+.media.twitter
+  p
+    margin-bottom: 2px
+  .tw-name
+    color: #504d53
+  .tw-occu
+    color: #797877
+  .tw-link
+    color: #f15a20
+
+.roblaw-title
+  font-family: oswald //esta la tenes q agregar: http://www.google.com/fonts#UsePlace:use/Collection:Oswald
+  font-size: 37px
+  color: #7a7881 //seria util poner todos los colores en variables
+  position: relative //le ponemos relative para poder posicionar en absolute a su :after
+  margin-bottom: 30px
+
+.roblaw-title:after
+  content: "" //esto es un pseudo elemento, sin un contenido nunca se veria
+  width: 76px
+  height: 6px
+  position: absolute
+  display: block
+  top: 125%
+  left: 2px
   background: $orange
-  color: $white
-.container
-  display: inline-block
-
-#social-networks
-  .left, .middle, .right
-    width: 320px / 960px * 100%
-  .left, .middle
-    float: left
-  .right
-    float: right
-  .left
-    #tweets
-      div
-        display: inline-block
-      .each-tweet
-        img
-          float: left
-          width: 70px /320px * 100%
-          height: auto
-        p
-          float: right
-
-#currently-recruiting
-  .left
-    float: left
-    width: 560px / 960px * 100%
-  .right
-    float: right
-    width: 400px / 960px * 100%
-    img
-      width: 400px / 960px * 100%
-      height: auto
-  .down
-    img
-      width: 75px / 560px * 100%
-      height: auto
-      padding-left: 3%
-      padding-bottom: 2%
-    div
-      padding-left: 5%
-
-
-#wellington-auckland
-  p, h3
-    color: $white
-  div
-    background-color: $black
-  #wellington, #auckland
-    width: 300px / 960px * 100%
-    float: left
-  #contactform
-    float: right
-    width: 360px / 960px * 100%
-    input, textarea
-      width: 300px / 360px * 100%
-      color: $white
-      margin:  3%
-      background-color: $black
-
-#footer
-  .left, .right, .middle
-    width: 300px / 960px * 100%
-    //background-color: blue
-    //color: $white
-  .left, .middle
-    float: left
-  .right
-    float: right
-
-  
+  border-right: 1px solid #f8a98a
+  z-index: -1

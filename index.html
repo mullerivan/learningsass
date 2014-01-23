@@ -1,218 +1,108 @@
 <!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/html">
+<html class="no-js">
 <head>
-
-    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
-    <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css">
-    <link rel="stylesheet" type="text/css" href="css/roblaw.css">
-    <script src="js/jquery-2.0.3.js" type="text/javascript"></script>
-    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
+    <meta name="description" content="">
+    <!-- esto lo necesitas para q los celulares y tablets sepan como presentar la pagina -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    <!-- css -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+    <!-- <link rel="stylesheet" type="text/css" href="css/bootstrap-theme.min.css"> -->
+    <link rel="stylesheet" type="text/css" href="css/roblaw.css">
+
+
 </head>
 <body>
-<div class="navbar">
-    <nav class="navbar navbar-default" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header nav">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
+        <!--[if lt IE 8]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+            <![endif]-->
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse nav">
-            <ul class="nav navbar-nav">
-                <li><a class="navbar-brand" href="#"><span>ROB</span> <span class="label-red">LAW</span> </a></li>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">JOB SEARCH</a></li>
-                <li><a href="#">WORKING NZ</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#"><span class="label-orange">Sing in</span></a></li>
-                <li><a href="#">/Register</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <span class="label-orange">CURRENT SITE </span> ROB LAW MAX <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">OTHER SITE</a></li>
-                        <li><a href="#">OTHER SITE</a></li>
-                        <li><a href="#">OTHER SITE</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </nav>
-</div>
+            <div class="section-container">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4"> <!-- fijate de usar las classes de bootstrap para el grid, asi sale mas facil
+                            van a ser asi: xs -> pantallas extra-small
+                                            sm -> small
+                                            md -> medium
+                                            sajlnraoisndofainsdoifnaosdinf!!!!!!
+                            aca tenes bien cuales son los cortes: http://getbootstrap.com/css/#grid-options -->
+                            <h3 class="roblaw-title">Latest Tweets</h3>
+                            <!-- esto es el media object: http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/ -->
+                            <div class="media attribution twitter">
+                                <a href="#" class="img">
+                                    <img src="img/twitter-light.png" alt="mandame info" />
+                                </a>
+                                <div class="bd">
+                                    <p><a href="#" class="tw-name">Patrick Quin @patquin</a></p>
+                                    <p class="tw-occu">Wellington - Senior Structural Engineer</p>
+                                    <p><a href="http://lnkd.in/b5u6k69" class="tw-link">http://lnkd.in/b5u6k69</a></p>
+                                </div>
+                            </div>
+                            <div class="media attribution twitter">
+                                <a href="#" class="img">
+                                    <img src="img/twitter-light.png" alt="mandame info" />
+                                </a>
+                                <div class="bd">
+                                    <p><a href="#" class="tw-name">Patrick Quin @patquin</a></p>
+                                    <p class="tw-occu">Wellington - Senior Structural Engineer</p>
+                                    <p><a href="http://lnkd.in/b5u6k69" class="tw-link">http://lnkd.in/b5u6k69</a></p>
+                                </div>
+                            </div>
+                            <div class="media attribution twitter">
+                                <a href="#" class="img">
+                                    <img src="img/twitter-light.png" alt="mandame info" />
+                                </a>
+                                <div class="bd">
+                                    <p><a href="#" class="tw-name">Patrick Quin @patquin</a></p>
+                                    <p class="tw-occu">Wellington - Senior Structural Engineer</p>
+                                    <p><a href="http://lnkd.in/b5u6k69" class="tw-link">http://lnkd.in/b5u6k69</a></p>
+                                </div>
+                            </div>
 
-<div class="container" id="need-an-adventure"></div>
-<div class="container" id="we-recruit"></div>
-<div class="container" id="job-search"></div>
-<div class="container" id="featured-job"></div>
-<div class="container" id="labour-now"></div>
-<div class="container" id="social-networks">
-    <div class="row left">
-        <h3>Latest Tweets</h3>
-        <img src="img/line-orange.png"> </img>
-        <div id="tweets">
-            <div class="each-tweet">
-                <img class="tweet-img" src="img/tweeter.png"> </img>
-                <span>Ivan Muller @mullerivan</span>
-                <span>Nelson - Senior Ruby programer</span>
-                <a href="mullerivan.com.ar">http://Lnkd.ini/b34ssd</a>
-            </div>
-            <div class="each-tweet">
-                <img class="tweet-img" src="img/tweeter.png"> </img>
-                <span>Ivan Muller @mullerivan</span>
-                <span>Nelson - Senior Ruby programer</span>
-                <a href="mullerivan.com.ar">http://Lnkd.ini/b34ssd</a>
-            </div>
-            <div class="each-tweet">
-                <img class="tweet-img" src="img/tweeter.png"> </img>
-                <span>Ivan Muller @mullerivan</span>
-                <span>Nelson - Senior Ruby programer</span>
-                <a href="mullerivan.com.ar">http://Lnkd.ini/b34ssd</a>
-            </div>
-        </div>
-    </div>
-    <div class="row middle">
-        <h3>Linkedin </h3>
-        <img src="img/line-orange.png"> </img>
-        <p>aaaaa bbbbb ccccc ddddd eeeee fffffff gggggg hhhhhh iiiiii jjjjjjj kkkk lllll mmmmmm aaaaa bbbbb ccccc ddddd
-            eeeee fffffff gggggg hhhhhh iiiiii jjjjjjj kkkk lllll mmmmmm aaaaa bbbbb ccccc ddddd eeeee fffffff gggggg
-            hhhhhh iiiiii jjjjjjj kkkk lllll mmmmmm aaaaa bbbbb ccccc ddddd eeeee fffffff gggggg hhhhhh iiiiii jjjjjjj
-            kkkk lllll mmmmmm</p>
-    </div>
-    <div class="row right">
-        <h3>Facebook</h3>
-        <img src="img/line-orange.png"> </img>
-        <p>aaaaa bbbbb ccccc ddddd eeeee fffffff gggggg hhhhhh iiiiii jjjjjjj kkkk lllll mmmmmm aaaaa bbbbb ccccc ddddd
-            eeeee fffffff gggggg hhhhhh iiiiii jjjjjjj kkkk lllll mmmmmm aaaaa bbbbb ccccc ddddd eeeee fffffff gggggg
-            hhhhhh iiiiii jjjjjjj kkkk lllll mmmmmm aaaaa bbbbb ccccc ddddd eeeee fffffff gggggg hhhhhh iiiiii jjjjjjj
-            kkkk lllll mmmmmm</p>
-    </div>
-</div>
-<div class="container" id="currently-recruiting">
-    <div class="left">
-        <div>
-            <h3> Currently Recruiting For </h3>
-            <img src="img/line-orange.png"> </img>
-        </div>
-        <span>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci</span>
-        <span class="label-orange"> velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore </span>
-        magnam aliquam quaerat voluptatem.</span>
-    </div>
-    <div class="right">
-        <img src="img/spanner.png" alt="spanner"> </img>
-    </div>
-    <div class="down">
-        <img src="img/liquigas.png" alt="liquigas"> </img>
-        <img src="img/kiwirail.png" alt="kiwirail"> </img>
-        <img src="img/topenergy.png" alt="topenergy"> </img>
+                        </div>
+                        <div class="col-sm-4">
+                            <h3 class="roblaw-title">Linkedin </h3>
+                            <p>aaaaa bbbbb ccccc ddddd eeeee fffffff gggggg hhhhhh iiiiii jjjjjjj kkkk lllll mmmmmm aaaaa bbbbb ccccc ddddd
+                                eeeee fffffff gggggg hhhhhh iiiiii jjjjjjj kkkk lllll mmmmmm aaaaa bbbbb ccccc ddddd eeeee fffffff gggggg
+                                hhhhhh iiiiii jjjjjjj kkkk lllll mmmmmm aaaaa bbbbb ccccc ddddd eeeee fffffff gggggg hhhhhh iiiiii jjjjjjj
+                                kkkk lllll mmmmmm</p>
+                            </div>
+                            <div class="col-sm-4">
+                                <h3 class="roblaw-title">Facebook</h3>
+                                <p>aaaaa bbbbb ccccc ddddd eeeee fffffff gggggg hhhhhh iiiiii jjjjjjj kkkk lllll mmmmmm aaaaa bbbbb ccccc ddddd
+                                    eeeee fffffff gggggg hhhhhh iiiiii jjjjjjj kkkk lllll mmmmmm aaaaa bbbbb ccccc ddddd eeeee fffffff gggggg
+                                    hhhhhh iiiiii jjjjjjj kkkk lllll mmmmmm aaaaa bbbbb ccccc ddddd eeeee fffffff gggggg hhhhhh iiiiii jjjjjjj
+                                    kkkk lllll mmmmmm</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
 
-        <div class="btn-group" id="more-companies">
-            <button type="button" class="btn ">More companies</button>
-            <button type="button" class="btn dropdown-toggle" data-toggle="dropdown">
-                <span class="caret"></span>
-                <span class="sr-only">Toggle Dropdown</span>
-            </button>
-            <ul class="dropdown-menu" role="menu">
-                <li><a href="#">More</a></li>
-                <li><a href="#">More</a></li>
-                <li class="divider"></li>
-                <li><a href="#">Other category MORE</a></li>
-            </ul>
-        </div>
-    </div>
-</div>
-<div class="container" id="wellington-auckland">
-    <div id="wellington">
-        <h3>Wellington</h3>
 
-        <p> Physical Address:<br>
-            Level 4, Aviation House<br>
-            12 Johnston Street<br>
-            Wellington 6011
-        </p>
 
-        <p>
-            Postal Address:<br>
-            PO Box 5555<br>
-            Wellington 6145
-        </p>
+                    <!-- magias para los js   la doble // hace q trate de buscarlo por https pero si no le da, va por http-->
+                    <script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script>
+                    <!-- esta linea dice, fijate si se cargo jquery de la cdn de arriba, sino mandasela de nuestro servidor -->
+                    <script>window.jQuery || document.write('<script src="js/jquery-2.0.3.min.js"><\/script>')</script>
+                    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+                </body>
+                </html>
 
-        <p>
-            Tel: +64 4 499 8800 <br>
-            Fax: +64 4 499 0955
-        </p>
 
-        <p>
-            <a href="mailto:reception@roblawmax.co.nz">reception@roblawmax.co.nz</a>
-        </p>
-    </div>
-    <div id="auckland">
-        <h3>Auckland</h3>
 
-        <p>
-            Physical Address:<br>
-            Generator, Level 1<br>
-            Stanbeth House<br>
-            28 Customs St East<br>
-            Auckland 1010
-        </p>
 
-        <p>
-            Postal Address:<br>
-            PO Box 5555<br>
-            Wellington 6145
-        </p>
 
-        <p>
-            Hamish McLean - 09 951 5011<br>
-            Nick Wallwork - 09 951 5010<br>
-            Kerry Rowlands - 09 951 5006
-        </p>
-    </div>
-    <div id="contactform">
-        <form action="/contact-us/Form" method="post">
-            <input type="text" required="required" aria-required="true" placeholder="Full Name"><br>
-            <input type="email" required="required" aria-required="true" placeholder="Email Address"><br>
-            <label for="textarea">Message</label><br>
-            <textarea id="textarea" required="required" aria-required="true" rows="4" cols="20"></textarea><br>
-            <button class="btn action" type="submit" value="Send Message">Send Message</button>
-        </form>
-    </div>
-</div>
-<div class="container" id="footer">
-    <div class="left">
-        <h4>Our Recruitment Agencies</h4>
 
-        <p> We offer both labour and degree based employment </p>
-    </div>
-    <div class="middle">
-        <h4>Social Media</h4>
 
-        <p> We offer both labour and degree based employment </p>
-    </div>
-    <div class="right">
-        <h4>Keep In Touch</h4>
 
-        <p> SIng up for Newsletters </p>
 
-        <div class="input-group">
-            <input type="text" class="form-control" placeholder="Email Address">
-                          <span class="input-group-btn">
-                            <button class="btn btn-warning" type="button">Submit</button>
-                          </span>
-        </div>
-        <!-- /input-group -->
-    </div>
-</div>
-</body>
-</html>
+
+
+
+
+
