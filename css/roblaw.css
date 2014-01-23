@@ -1,0 +1,71 @@
+.nav {
+  width: 100%;
+  background: black; }
+
+.label-red {
+  color: red; }
+
+.label-orange {
+  color: darkorange; }
+
+.btn {
+  background: darkorange;
+  color: white; }
+
+.container {
+  display: inline-block; }
+
+#social-networks .left, #social-networks .middle, #social-networks .right {
+  width: 33.33333%; }
+#social-networks .left, #social-networks .middle {
+  float: left; }
+#social-networks .right {
+  float: right; }
+#social-networks .left #tweets div {
+  display: inline-block; }
+#social-networks .left #tweets .each-tweet img {
+  float: left;
+  width: 21.875%;
+  height: auto; }
+#social-networks .left #tweets .each-tweet p {
+  float: right; }
+
+#currently-recruiting .left {
+  float: left;
+  width: 58.33333%; }
+#currently-recruiting .right {
+  float: right;
+  width: 41.66667%; }
+  #currently-recruiting .right img {
+    width: 41.66667%;
+    height: auto; }
+#currently-recruiting .down img {
+  width: 13.39286%;
+  height: auto;
+  padding-left: 3%;
+  padding-bottom: 2%; }
+#currently-recruiting .down div {
+  padding-left: 5%; }
+
+#wellington-auckland p, #wellington-auckland h3 {
+  color: white; }
+#wellington-auckland div {
+  background-color: black; }
+#wellington-auckland #wellington, #wellington-auckland #auckland {
+  width: 31.25%;
+  float: left; }
+#wellington-auckland #contactform {
+  float: right;
+  width: 37.5%; }
+  #wellington-auckland #contactform input, #wellington-auckland #contactform textarea {
+    width: 83.33333%;
+    color: white;
+    margin: 3%;
+    background-color: black; }
+
+#footer .left, #footer .right, #footer .middle {
+  width: 31.25%; }
+#footer .left, #footer .middle {
+  float: left; }
+#footer .right {
+  float: right; }
