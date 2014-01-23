@@ -76,3 +76,10 @@
   float: left; }
 #footer .right {
   float: right; }
+
+#technical-recruitment img, #technical-recruitment div {
+  display: inline-block;
+  width: 20.83333%; }
+#technical-recruitment #non-image {
+  background-color: black;
+  color: white; }
