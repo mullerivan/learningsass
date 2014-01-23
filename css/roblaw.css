@@ -15,19 +15,26 @@
 .container {
   display: inline-block; }
 
+#social-networks div {
+  display: inline-block; }
 #social-networks .left, #social-networks .middle, #social-networks .right {
   width: 33.33333%; }
 #social-networks .left, #social-networks .middle {
   float: left; }
 #social-networks .right {
   float: right; }
-#social-networks .left #tweets div {
-  display: inline-block; }
-#social-networks .left #tweets .each-tweet img {
+  #social-networks .right #facebook img {
+    width: 93.75%;
+    height: auto; }
+  #social-networks .right #facebook .each-facebook img {
+    float: left;
+    width: 21.875%;
+    height: auto; }
+#social-networks .left #tweets img {
   float: left;
   width: 21.875%;
   height: auto; }
-#social-networks .left #tweets .each-tweet p {
+#social-networks .left #tweets p {
   float: right; }
 
 #currently-recruiting .left {

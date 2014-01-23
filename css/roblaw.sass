@@ -18,23 +18,31 @@ $white: #ffffff
   display: inline-block
 
 #social-networks
+  div
+    display: inline-block
   .left, .middle, .right
     width: 320px / 960px * 100%
   .left, .middle
     float: left
   .right
     float: right
-  .left
-    #tweets
-      div
-        display: inline-block
-      .each-tweet
+    #facebook
+      img
+        width: 300px /320px * 100%
+        height: auto
+      .each-facebook
         img
           float: left
           width: 70px /320px * 100%
           height: auto
-        p
-          float: right
+  .left
+    #tweets
+      img
+        float: left
+        width: 70px /320px * 100%
+        height: auto
+      p
+        float: right
 
 #currently-recruiting
   .left
