@@ -46,6 +46,13 @@
     width: 25%;
     color: white; }
 
+#we-recruit {
+  margin-top: 10%;
+  background: rgba(8, 8, 8, 0.4);
+  color: #7a7881;
+  padding-left: 15%;
+  padding-right: 15%; }
+
 #job-search .roblaw-title, #we-recruit .roblaw-title, #labour-now .roblaw-title {
   color: white; }
 
@@ -61,12 +68,6 @@
     margin: 3px; }
   #job-search #search {
     background: #f15a20; }
-
-#we-recruit {
-  background: rgba(8, 8, 8, 0.4);
-  color: #7a7881;
-  padding-left: 15%;
-  padding-right: 15%; }
 
 #labour-now {
   background-color: black; }
