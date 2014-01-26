@@ -15,6 +15,24 @@ $gray-dark: #504d53
 .btn
   background: $orange
   color: $white
+.roblaw-title
+  font-family: oswald //esta la tenes q agregar: http://www.google.com/fonts#UsePlace:use/Collection:Oswald
+  font-size: 37px
+  color: $gray
+  position: relative //le ponemos relative para poder posicionar en absolute a su :after
+  margin-bottom: 30px
+
+.roblaw-title:after
+  content: "" //esto es un pseudo elemento, sin un contenido nunca se veria
+  width: 76px
+  height: 6px
+  position: absolute
+  display: block
+  top: 125%
+  left: 2px
+  background: $orange
+  border-right: 1px solid #f8a98a
+  z-index: -1
 
 #social-networks
   .media
@@ -46,25 +64,6 @@ $gray-dark: #504d53
     .tw-link
       color: $orange
 
-  .roblaw-title
-    font-family: oswald //esta la tenes q agregar: http://www.google.com/fonts#UsePlace:use/Collection:Oswald
-    font-size: 37px
-    color: $gray
-    position: relative //le ponemos relative para poder posicionar en absolute a su :after
-    margin-bottom: 30px
-
-  .roblaw-title:after
-    content: "" //esto es un pseudo elemento, sin un contenido nunca se veria
-    width: 76px
-    height: 6px
-    position: absolute
-    display: block
-    top: 125%
-    left: 2px
-    background: $orange
-    border-right: 1px solid #f8a98a
-    z-index: -1
-
 #technical-recruitment
   img
     display: inline-block
@@ -72,3 +71,18 @@ $gray-dark: #504d53
   #non-image
     background-color: $black
     color: $white
+#featured-job
+  #miner
+    img
+      display: inline-block
+      width: 750px / 960px * 100%
+
+#footer
+  .left, .right, .middle
+    width: 300px / 960px * 100%
+  background-color: $black
+  color: $white
+  .left, .middle
+    float: left
+  .right
+    float: right
