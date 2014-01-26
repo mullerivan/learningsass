@@ -31,6 +31,52 @@
   border-right: 1px solid #f8a98a;
   z-index: -1; }
 
+#need-an-adventure {
+  background-image: url("/img/background-im.png"); }
+  #need-an-adventure #transparent {
+    background: rgba(36, 36, 36, 0.8);
+    color: white; }
+    #need-an-adventure #transparent button {
+      float: right; }
+  #need-an-adventure #orange {
+    background-color: #f15a20;
+    width: 25%;
+    color: white; }
+
+#job-search .roblaw-title, #we-recruit .roblaw-title, #labour-now .roblaw-title {
+  color: white; }
+
+#job-search {
+  text-align: center;
+  background-color: #222222; }
+  #job-search .select .btn {
+    border: none; }
+  #job-search .btn {
+    background: black;
+    color: white;
+    border-color: #7a7881;
+    margin: 3px; }
+  #job-search #search {
+    background: #f15a20; }
+
+#we-recruit {
+  background: rgba(8, 8, 8, 0.4);
+  color: #7a7881; }
+
+#labour-now {
+  background-color: black; }
+
+#technical-recruitment img {
+  display: inline-block;
+  width: 83.33333%; }
+#technical-recruitment #non-image {
+  background-color: black;
+  color: white; }
+
+#featured-job #miner img {
+  display: inline-block;
+  width: 78.125%; }
+
 #social-networks .media {
   margin: 10px; }
 #social-networks .media, #social-networks .bd {
@@ -49,22 +95,11 @@
 #social-networks .media.twitter p {
   margin-bottom: 2px; }
 #social-networks .media.twitter .tw-name {
-  color: #504d53; }
+  color: #222222; }
 #social-networks .media.twitter .tw-occu {
   color: #7a7881; }
 #social-networks .media.twitter .tw-link {
   color: #f15a20; }
-
-#technical-recruitment img {
-  display: inline-block;
-  width: 83.33333%; }
-#technical-recruitment #non-image {
-  background-color: black;
-  color: white; }
-
-#featured-job #miner img {
-  display: inline-block;
-  width: 78.125%; }
 
 #footer {
   background-color: black;

@@ -4,7 +4,7 @@ $orange: #f15a20
 $red: #ff0000
 $white: #ffffff
 $gray: #7a7881
-$gray-dark: #504d53
+$gray-dark: #222222 //#504d53
 .nav
   width: 100%
   background: $black
@@ -15,15 +15,16 @@ $gray-dark: #504d53
 .btn
   background: $orange
   color: $white
+
 .roblaw-title
-  font-family: oswald //esta la tenes q agregar: http://www.google.com/fonts#UsePlace:use/Collection:Oswald
+  font-family: oswald
   font-size: 37px
   color: $gray
-  position: relative //le ponemos relative para poder posicionar en absolute a su :after
+  position: relative //that is for put absolute on :after
   margin-bottom: 30px
 
 .roblaw-title:after
-  content: "" //esto es un pseudo elemento, sin un contenido nunca se veria
+  content: "" // with out content never see this
   width: 76px
   height: 6px
   position: absolute
@@ -34,9 +35,59 @@ $gray-dark: #504d53
   border-right: 1px solid #f8a98a
   z-index: -1
 
+#need-an-adventure
+  background-image: url("/img/background-im.png")
+  #transparent
+    background: rgba(36, 36, 36, 0.8)
+    color: $white
+    button
+      float: right
+  #orange
+    background-color: $orange
+    width:  100px / 400px * 100%
+    color: $white
+
+#job-search, #we-recruit, #labour-now
+  .roblaw-title
+    color: $white
+#job-search
+  text-align: center
+  background-color: $gray-dark
+  .select
+    .btn
+      border: none
+  .btn
+    background: $black
+    color: $white
+    border-color: $gray
+    //padding: 2%
+    margin: 3px
+  #search
+    background: $orange
+
+#we-recruit
+  background: rgba(8, 8, 8, 0.4)
+  color: $gray
+
+#labour-now
+  background-color: $black
+#technical-recruitment
+  img
+    display: inline-block
+    width: 200px / 240px * 100%
+  #non-image
+    background-color: $black
+    color: $white
+#featured-job
+  #miner
+    img
+      display: inline-block
+      width: 750px / 960px * 100%
+
 #social-networks
   .media
     margin: 10px
+
   .media, .bd
     overflow: hidden
     _overflow: visible
@@ -64,18 +115,6 @@ $gray-dark: #504d53
     .tw-link
       color: $orange
 
-#technical-recruitment
-  img
-    display: inline-block
-    width: 200px / 240px * 100%
-  #non-image
-    background-color: $black
-    color: $white
-#featured-job
-  #miner
-    img
-      display: inline-block
-      width: 750px / 960px * 100%
 
 #footer
   .left, .right, .middle
