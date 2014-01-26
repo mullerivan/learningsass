@@ -1,53 +1,74 @@
 $font-stack:    Helvetica, sans-serif
 $black: #000000
-$orange: #ff8c00
+$orange: #f15a20
 $red: #ff0000
 $white: #ffffff
-
-.media
-  margin: 10px
-.media, .bd
-  overflow: hidden
-  _overflow: visible
-  zoom: 1
-
-.media .img
-  float: left
-  margin-right:  10px
-  margin-top:  7px
-
-.media .img img
-  display: block
-
-.media .imgExt
-  float: right
-  margin-left: 10px
-
-.media.twitter
-  p
-    margin-bottom: 2px
-  .tw-name
-    color: #504d53
-  .tw-occu
-    color: #797877
-  .tw-link
-    color: #f15a20
-
-.roblaw-title
-  font-family: oswald //esta la tenes q agregar: http://www.google.com/fonts#UsePlace:use/Collection:Oswald
-  font-size: 37px
-  color: #7a7881 //seria util poner todos los colores en variables
-  position: relative //le ponemos relative para poder posicionar en absolute a su :after
-  margin-bottom: 30px
-
-.roblaw-title:after
-  content: "" //esto es un pseudo elemento, sin un contenido nunca se veria
-  width: 76px
-  height: 6px
-  position: absolute
-  display: block
-  top: 125%
-  left: 2px
+$gray: #7a7881
+$gray-dark: #504d53
+.nav
+  width: 100%
+  background: $black
+.label-red
+  color: $red
+.label-orange
+  color: $orange
+.btn
   background: $orange
-  border-right: 1px solid #f8a98a
-  z-index: -1
+  color: $white
+
+#social-networks
+  .media
+    margin: 10px
+  .media, .bd
+    overflow: hidden
+    _overflow: visible
+    zoom: 1
+
+  .media .img
+    float: left
+    margin-right:  10px
+    margin-top:  7px
+
+  .media .img img
+    display: block
+
+  .media .imgExt
+    float: right
+    margin-left: 10px
+
+  .media.twitter
+    p
+      margin-bottom: 2px
+    .tw-name
+      color: $gray-dark
+    .tw-occu
+      color: $gray
+    .tw-link
+      color: $orange
+
+  .roblaw-title
+    font-family: oswald //esta la tenes q agregar: http://www.google.com/fonts#UsePlace:use/Collection:Oswald
+    font-size: 37px
+    color: $gray
+    position: relative //le ponemos relative para poder posicionar en absolute a su :after
+    margin-bottom: 30px
+
+  .roblaw-title:after
+    content: "" //esto es un pseudo elemento, sin un contenido nunca se veria
+    width: 76px
+    height: 6px
+    position: absolute
+    display: block
+    top: 125%
+    left: 2px
+    background: $orange
+    border-right: 1px solid #f8a98a
+    z-index: -1
+
+#technical-recruitment
+  img
+    display: inline-block
+    width: 200px / 240px * 100%
+  #non-image
+    background-color: $black
+    color: $white
