@@ -105,6 +105,8 @@ a {
 #featured-job #miner img {
   display: inline-block;
   width: 78.125%; }
+#featured-job .each-job span {
+  margin-left: 1em; }
 
 #social-networks .media {
   margin: 10px; }
