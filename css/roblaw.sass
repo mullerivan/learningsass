@@ -5,11 +5,8 @@ $red: #ff0000
 $white: #ffffff
 $gray: #7a7881
 $gray-dark: #222222 //#504d53
-.nav
-  width: 100%
-  background: $black
-.navbar
-  margin-bottom: 0
+
+//GENERAL
 .label-red
   color: $red
 .label-orange
@@ -17,13 +14,22 @@ $gray-dark: #222222 //#504d53
 .btn
   background: $orange
   color: $white
-
+.bold
+  font-weight: bold
 .roblaw-title
   font-family: oswald
   font-size: 37px
   color: $gray
   position: relative //that is for put absolute on :after
   margin-bottom: 30px
+//END GENERAL
+
+.nav
+  width: 100%
+  background: $black
+  align-content: center
+.navbar
+  margin-bottom: 0
 
 .roblaw-title:after
   content: "" // with out content never see this
@@ -39,7 +45,11 @@ $gray-dark: #222222 //#504d53
 
 #need-an-adventure
   background-image: url("/img/background-im.png")
-  #transparent
+  .transparent
+    h2
+      text-transform: uppercase
+    h5
+      text-transform: capitalize
     background: rgba(36, 36, 36, 0.8)
     color: $white
     button
@@ -48,6 +58,8 @@ $gray-dark: #222222 //#504d53
     background-color: $orange
     width:  100px / 400px * 100%
     color: $white
+    padding-top: 2.5em
+    font-size: 1.3em
 
 #we-recruit
   margin-top: 10%
