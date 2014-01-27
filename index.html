@@ -426,11 +426,14 @@
                 </p>
             </div>
             <div class="col-sm-4" id="contactform">
-                <form action="/contact-us/Form" method="post">
+                <form action="/contact-us/Form" method="post" role="form">
                     <input type="text" required="required" aria-required="true" placeholder="Full Name"><br>
                     <input type="email" required="required" aria-required="true" placeholder="Email Address"><br>
+                <div class="form-group">
+
                     <label for="textarea">Message</label><br>
                     <textarea id="textarea" required="required" aria-required="true" rows="4" cols="20"></textarea><br>
+                </div>
                     <button class="btn action" type="submit" value="Send Message">Send Message</button>
                 </form>
             </div>
