@@ -22,6 +22,8 @@ $gray-dark: #222222 //#504d53
   color: $gray
   position: relative //that is for put absolute on :after
   margin-bottom: 30px
+a
+  color: $orange
 //END GENERAL
 
 .nav
@@ -41,25 +43,29 @@ $gray-dark: #222222 //#504d53
   left: 2px
   background: $orange
   border-right: 1px solid #f8a98a
-  z-index: -1
+  //z-index: -1
 
 #need-an-adventure
   background-image: url("/img/background-im.png")
   .transparent
+    background: rgba(36, 36, 36, 0.8)
+    color: $white
+    margin-top: 5em
     h2
       text-transform: uppercase
     h5
       text-transform: capitalize
-    background: rgba(36, 36, 36, 0.8)
-    color: $white
     button
       float: right
-  #orange
+
+
+  .orange
     background-color: $orange
     width:  100px / 400px * 100%
     color: $white
     padding-top: 2.5em
     font-size: 1.3em
+    margin-top: 4em
 
 #we-recruit
   margin-top: 10%
@@ -73,7 +79,12 @@ $gray-dark: #222222 //#504d53
     color: $white
 #job-search
   text-align: center
+  align-content: center
   background-color: $gray-dark
+  h2
+    font-family: oswald
+    font-size: 37px
+    color: $white
   .select
     .btn
       border: none
@@ -86,12 +97,10 @@ $gray-dark: #222222 //#504d53
   #search
     background: $orange
 
-
 #labour-now
   background-color: $black
   a
     margin-right: 2em
-    color: $orange
 #technical-recruitment
   img
     width: 28em
@@ -138,21 +147,43 @@ $gray-dark: #222222 //#504d53
       color: $orange
   .facebook
     img
-      width: 300px /320px * 100%
+      width: 180px /320px * 100%
       height: auto
     .each-facebook
       img
         width: 70px /320px * 100%
         height: auto
-#footer
-  .left, .right, .middle
-    width: 300px / 960px * 100%
-  background-color: $black
-  color: $white
-  .left, .middle
-    float: left
-  .right
-    float: right
 
+#currently-recruiting
+  .spanner
+    img
+      width: 200px / 460px * 100%
+      height: auto
+      padding-left: 3%
+      padding-bottom: 2%
+      z-index: -1
+  .more-companies
+    img
+      margin-right: 5em
+#wellington-auckland
+  background: url("/img/background-im.png") 0 no-repeat
+  color: $white
+  padding-top: 2em
+  #contactform
+    padding-top: 1em
+    input, textarea
+      min-width: 18em
+      min-height: 3em
+      background-color: $black
+      border: none
+      color: $white
+      margin-bottom: 1em
+
+
+#footer
+  padding: 2em 0em 2em 0em
+  background-color: $black
+  .social-icons
+    margin-top: 10%
 .section-full-width
   width: 100%

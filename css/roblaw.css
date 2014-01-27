@@ -18,6 +18,9 @@
   position: relative;
   margin-bottom: 30px; }
 
+a {
+  color: #f15a20; }
+
 .nav {
   width: 100%;
   background: black;
@@ -35,26 +38,27 @@
   top: 125%;
   left: 2px;
   background: #f15a20;
-  border-right: 1px solid #f8a98a;
-  z-index: -1; }
+  border-right: 1px solid #f8a98a; }
 
 #need-an-adventure {
   background-image: url("/img/background-im.png"); }
   #need-an-adventure .transparent {
     background: rgba(36, 36, 36, 0.8);
-    color: white; }
+    color: white;
+    margin-top: 5em; }
     #need-an-adventure .transparent h2 {
       text-transform: uppercase; }
     #need-an-adventure .transparent h5 {
       text-transform: capitalize; }
     #need-an-adventure .transparent button {
       float: right; }
-  #need-an-adventure #orange {
+  #need-an-adventure .orange {
     background-color: #f15a20;
     width: 25%;
     color: white;
     padding-top: 2.5em;
-    font-size: 1.3em; }
+    font-size: 1.3em;
+    margin-top: 4em; }
 
 #we-recruit {
   margin-top: 10%;
@@ -68,7 +72,12 @@
 
 #job-search {
   text-align: center;
+  align-content: center;
   background-color: #222222; }
+  #job-search h2 {
+    font-family: oswald;
+    font-size: 37px;
+    color: white; }
   #job-search .select .btn {
     border: none;
     background: black;
@@ -83,8 +92,7 @@
 #labour-now {
   background-color: black; }
   #labour-now a {
-    margin-right: 2em;
-    color: #f15a20; }
+    margin-right: 2em; }
 
 #technical-recruitment img {
   width: 28em; }
@@ -122,21 +130,40 @@
 #social-networks .media.twitter .tw-link {
   color: #f15a20; }
 #social-networks .facebook img {
-  width: 93.75%;
+  width: 56.25%;
   height: auto; }
 #social-networks .facebook .each-facebook img {
   width: 21.875%;
   height: auto; }
 
+#currently-recruiting .spanner img {
+  width: 43.47826%;
+  height: auto;
+  padding-left: 3%;
+  padding-bottom: 2%;
+  z-index: -1; }
+#currently-recruiting .more-companies img {
+  margin-right: 5em; }
+
+#wellington-auckland {
+  background: url("/img/background-im.png") 0 no-repeat;
+  color: white;
+  padding-top: 2em; }
+  #wellington-auckland #contactform {
+    padding-top: 1em; }
+    #wellington-auckland #contactform input, #wellington-auckland #contactform textarea {
+      min-width: 18em;
+      min-height: 3em;
+      background-color: black;
+      border: none;
+      color: white;
+      margin-bottom: 1em; }
+
 #footer {
-  background-color: black;
-  color: white; }
-  #footer .left, #footer .right, #footer .middle {
-    width: 31.25%; }
-  #footer .left, #footer .middle {
-    float: left; }
-  #footer .right {
-    float: right; }
+  padding: 2em 0em 2em 0em;
+  background-color: black; }
+  #footer .social-icons {
+    margin-top: 10%; }
 
 .section-full-width {
   width: 100%; }
