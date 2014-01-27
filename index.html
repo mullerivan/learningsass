@@ -24,46 +24,44 @@
     your browser</a> to improve your experience.</p>
 <![endif]-->
 
-<div class="navbar">
-    <nav class="navbar navbar-default navbar-static-top" role="navigation">
 
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="navbar-header nav">
-            <button type="button" class="navbar-toggle" data-toggle="collapse"
-                    data-target="#bs-example-navbar-collapse-1">
-                <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-            </button>
-        </div>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+        </button>
+    </div>
 
-        <!-- Collect the nav links, forms, and other content for toggling -->
-        <div class="collapse navbar-collapse nav">
-            <ul class="nav navbar-nav">
-                <li><a class="navbar-brand" href="#"><span>ROB</span> <span class="label-red">LAW</span> </a></li>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT US</a></li>
-                <li><a href="#">JOB SEARCH</a></li>
-                <li><a href="#">WORKING NZ</a></li>
-                <li><a href="#">CONTACT</a></li>
-                <li><a href="#"><span class="label-orange">Sing in</span></a></li>
-                <li><a href="#">/Register</a></li>
-                <li class="dropdown">
-                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-                        <span class="label-orange">CURRENT SITE </span> ROB LAW MAX <b class="caret"></b>
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">OTHER SITE</a></li>
-                        <li><a href="#">OTHER SITE</a></li>
-                        <li><a href="#">OTHER SITE</a></li>
-                    </ul>
-                </li>
-            </ul>
-        </div>
-        <!-- /.navbar-collapse -->
-    </nav>
-</div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+            <li><a class="navbar-brand" href="#"><span>ROB</span> <span class="label-red">LAW</span> </a></li>
+            <li><a href="#">HOME</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">JOB SEARCH</a></li>
+            <li><a href="#">WORKING NZ</a></li>
+            <li><a href="#">CONTACT</a></li>
+            <li><a href="#"><span class="label-orange">Sing in</span></a></li>
+            <li><a href="#">/Register</a></li>
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                    <span class="label-orange">CURRENT SITE </span> ROB LAW MAX <b class="caret"></b>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">OTHER SITE</a></li>
+                    <li><a href="#">OTHER SITE</a></li>
+                    <li><a href="#">OTHER SITE</a></li>
+                </ul>
+            </li>
+        </ul>
+
+    </div><!-- /.navbar-collapse -->
+</nav>
+
 
 <div class="section-container" id="need-an-adventure">
     <div class="container">
@@ -75,7 +73,7 @@
                 <p>New Zealand's leading Technical & industry</p>
 
                 <p>Recruitment Agency</p>
-                <button type="button" class="btn">SEARCH JOBS</button>
+                <button type="button" class="btn hidden-xs">SEARCH JOBS</button>
             </div>
             <div class="col-sm-6 orange" >
                 <p>We have <span class="bold"> 500+ Engineering Technical & Infrastructure Jobs </span> waiting right
@@ -121,7 +119,7 @@
 <div class="section-container" id="job-search">
     <div class="container">
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 col-lg-12">
                 <h2 >JOB SEARCH</h2>
 
                 <div class="btn-group select">
@@ -135,7 +133,7 @@
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12">
+            <div class="col-sm-12 col-lg-12">
                 <div class="btn-group">
                     <button type="button" class="btn btn-default">Browser all jobs</button>
                     <button type="button" class="btn btn-default">Register with us</button>
@@ -197,7 +195,7 @@
 
                 </div>
             </div>
-            <div class="col-sm-6" id="miner">
+            <div class="col-sm-6 hidden-xs" id="miner">
                 <img src="img/miner.png" alt="miner">
             </div>
 
@@ -228,31 +226,28 @@
     </div>
 </div>
 
-<div class="section-container" id="technical-recruitment">
+<div class="section-container visible-lg visible-md" id="technical-recruitment">
     <div class="full-width-container">
         <div class="row">
-            <div class="col-sm-3">
+            <div class="col-sm-12">
                 <img src="img/windmill.png" alt="windmill">
-            </div>
-            <div class="col-sm-3" id="non-image">
-                <div>
-                    <h4>Technical Recruitment</h4>
-                    <span> we are New Zealand's leading Engineering, and Construction recruitment company</span>
-                    <input name="uploadfile" type="file" data-toggle="fancyfile" data-text="false"
-                           class="input-xlarge btn">
-                </div>
-            </div>
-            <div class="col-sm-3">
-                <img src="img/manhat.png" alt="manhat">
-            </div>
-            <div class="col-sm-3">
+                <img src="img/windmill.png" alt="windmill">
+            <!--<div class="col-sm-3" id="non-image">-->
+                <!--<div>-->
+                    <!--<h4>Technical Recruitment</h4>-->
+                    <!--<span> we are New Zealand's leading Engineering, and Construction recruitment company</span>-->
+                    <!--<input name="uploadfile" type="file" data-toggle="fancyfile" data-text="false"-->
+                           <!--class="input-xlarge btn">-->
+                <!--</div>-->
+            <!--</div>-->
+                <img src="img/manhat.png" alt="manhat" >
                 <img src="img/windmill.png" alt="windmill">
             </div>
         </div>
     </div>
 </div>
 
-<div class="section-container" id="social-networks">
+<div class="section-container hidden-xs" id="social-networks">
     <div class="container">
         <div class="row">
             <div class="col-sm-4"> <!-- fijate de usar las classes de bootstrap para el grid, asi sale mas facil
@@ -351,12 +346,12 @@
                 <span class="label-orange"> velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore </span>
                 magnam aliquam quaerat voluptatem.</span>
             </div>
-            <div class="col-sm-4">
+            <div class="col-sm-4 hidden-xs">
                 <img src="img/spanner.png" alt="spanner" class="spanner"> </img>
             </div>
         </div>
         <div class="row">
-            <div class="col-sm-12 more-companies">
+            <div class=" col-sm-12 more-companies">
                 <img src="img/liquigas.png" alt="liquigas"> </img>
                 <img src="img/kiwirail.png" alt="kiwirail"> </img>
                 <img src="img/topenergy.png" alt="topenergy"> </img>
