@@ -70,22 +70,27 @@
   text-align: center;
   background-color: #222222; }
   #job-search .select .btn {
-    border: none; }
-  #job-search .btn {
+    border: none;
     background: black;
-    color: white;
-    border-color: #7a7881;
+    min-height: 3em; }
+  #job-search .btn {
+    background: #222222;
+    border-color: white;
     margin: 3px; }
   #job-search #search {
     background: #f15a20; }
 
 #labour-now {
   background-color: black; }
+  #labour-now a {
+    margin-right: 2em;
+    color: #f15a20; }
 
 #technical-recruitment img {
-  display: inline-block;
-  width: 83.33333%; }
+  width: 28em; }
 #technical-recruitment #non-image {
+  width: 28em;
+  min-height: 19em;
   background-color: black;
   color: white; }
 
@@ -116,6 +121,12 @@
   color: #7a7881; }
 #social-networks .media.twitter .tw-link {
   color: #f15a20; }
+#social-networks .facebook img {
+  width: 93.75%;
+  height: auto; }
+#social-networks .facebook .each-facebook img {
+  width: 21.875%;
+  height: auto; }
 
 #footer {
   background-color: black;

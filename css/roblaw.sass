@@ -77,11 +77,11 @@ $gray-dark: #222222 //#504d53
   .select
     .btn
       border: none
+      background: $black
+      min-height: 3em
   .btn
-    background: $black
-    color: $white
-    border-color: $gray
-    //padding: 2%
+    background: $gray-dark
+    border-color: $white
     margin: 3px
   #search
     background: $orange
@@ -89,11 +89,15 @@ $gray-dark: #222222 //#504d53
 
 #labour-now
   background-color: $black
+  a
+    margin-right: 2em
+    color: $orange
 #technical-recruitment
   img
-    display: inline-block
-    width: 200px / 240px * 100%
+    width: 28em
   #non-image
+    width: 28em
+    min-height: 19em
     background-color: $black
     color: $white
 #featured-job
@@ -132,8 +136,14 @@ $gray-dark: #222222 //#504d53
       color: $gray
     .tw-link
       color: $orange
-
-
+  .facebook
+    img
+      width: 300px /320px * 100%
+      height: auto
+    .each-facebook
+      img
+        width: 70px /320px * 100%
+        height: auto
 #footer
   .left, .right, .middle
     width: 300px / 960px * 100%
