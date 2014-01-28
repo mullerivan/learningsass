@@ -1,3 +1,6 @@
+img {
+  max-width: 100%; }
+
 .label-red {
   color: red; }
 
@@ -13,13 +16,26 @@
 
 .roblaw-title {
   font-family: oswald;
-  font-size: 37px;
+  font-size: 2.6em;
   color: #7a7881;
   position: relative;
-  margin-bottom: 30px; }
+  margin-bottom: 1.6em; }
 
 a {
   color: #f15a20; }
+
+.roblaw-title:after {
+  content: "";
+  width: 2em;
+  height: 0.16em;
+  position: absolute;
+  display: block;
+  top: 125%;
+  left: 0.1em;
+  background: -webkit-linear-gradient(right, #f15a20, #f15a20, #f15a20, #f15a20, #f8a98a);
+  background: -o-linear-gradient(right, #f15a20, #f15a20, #f15a20, #f15a20, #f8a98a);
+  background: -moz-linear-gradient(right, #f15a20, #f15a20, #f15a20, #f15a20, #f8a98a);
+  background: linear-gradient(to right, #f15a20, #f15a20, #f15a20, #f15a20, #f8a98a); }
 
 .nav {
   width: 100%;
@@ -28,17 +44,6 @@ a {
 
 .navbar {
   margin-bottom: 0; }
-
-.roblaw-title:after {
-  content: "";
-  width: 76px;
-  height: 6px;
-  position: absolute;
-  display: block;
-  top: 125%;
-  left: 2px;
-  background: #f15a20;
-  border-right: 1px solid #f8a98a; }
 
 #need-an-adventure {
   background-image: url("/img/background-im.png"); }
@@ -62,22 +67,24 @@ a {
     font-size: 1.3em;
     margin-top: 3.82em; }
 
-#we-recruit {
-  margin-top: 10%;
+.we-recruit {
+  margin-top: 5em;
   background: rgba(8, 8, 8, 0.4);
-  color: #7a7881;
+  color: #999999;
   padding-left: 15%;
   padding-right: 15%; }
 
-#job-search .roblaw-title, #we-recruit .roblaw-title, #labour-now .roblaw-title {
-  color: white; }
+#job-search, #we-recruit, #labour-now {
+  color: #999999; }
+  #job-search .roblaw-title, #we-recruit .roblaw-title, #labour-now .roblaw-title {
+    color: white; }
 
 #job-search {
   text-align: center;
   background-color: #222222; }
   #job-search h2 {
     font-family: oswald;
-    font-size: 37px;
+    font-size: 2.6em;
     color: white; }
   #job-search .select .btn {
     border: none;
@@ -97,37 +104,39 @@ a {
   #labour-now a {
     margin-right: 2em; }
 
-#technical-recruitment img {
-  width: 28em; }
-#technical-recruitment #non-image {
-  width: 28em;
-  min-height: 19em;
-  background-color: black;
-  color: white; }
+.technical-recruitment {
+  overflow: hidden; }
+  .technical-recruitment .container {
+    display: inline; }
+  .technical-recruitment img {
+    float: inherit;
+    max-width: 25%; }
 
-#featured-job #miner img {
-  display: inline-block;
-  width: 78.125%; }
+#featured-job #miner {
+  overflow: hidden; }
+  #featured-job #miner img {
+    position: relative;
+    left: 10%; }
 #featured-job .each-job span {
   margin-left: 1em; }
 
 #social-networks .media {
-  margin: 10px; }
+  margin: 1em; }
 #social-networks .media, #social-networks .bd {
   overflow: hidden;
   _overflow: visible;
   zoom: 1; }
 #social-networks .media .img {
   float: left;
-  margin-right: 10px;
-  margin-top: 7px; }
+  margin-right: 1em;
+  margin-top: 0.7em; }
 #social-networks .media .img img {
   display: block; }
 #social-networks .media .imgExt {
   float: right;
-  margin-left: 10px; }
+  margin-left: 1em; }
 #social-networks .media.twitter p {
-  margin-bottom: 2px; }
+  margin-bottom: 0.2em; }
 #social-networks .media.twitter .tw-name {
   color: #222222; }
 #social-networks .media.twitter .tw-occu {
@@ -151,7 +160,7 @@ a {
   margin-right: 5em; }
 
 #wellington-auckland {
-  background: url("/img/background-im.png") 0 no-repeat;
+  background: url("/img/background-im.png");
   color: white;
   padding-top: 2em; }
   #wellington-auckland #contactform {

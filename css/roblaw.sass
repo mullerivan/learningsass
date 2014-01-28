@@ -5,8 +5,10 @@ $red: #ff0000
 $white: #ffffff
 $gray: #7a7881
 $gray-dark: #222222 //#504d53
-
+$gray-light: #999999 //#d3d3d3
 //GENERAL
+img
+  max-width: 100%
 .label-red
   color: $red
 .label-orange
@@ -18,14 +20,27 @@ $gray-dark: #222222 //#504d53
   font-weight: bold
 .roblaw-title
   font-family: oswald
-  font-size: 37px
+  font-size: 2.6em //37px
   color: $gray
   position: relative //that is for put absolute on :after
-  margin-bottom: 30px
+  margin-bottom: 1.6em //30px
 a
   color: $orange
-//END GENERAL
 
+.roblaw-title:after
+  content: "" // with out content never see this
+  width: 2em //76px
+  height: 0.16em //6px
+  position: absolute
+  display: block
+  top: 125%
+  left: 0.1em //2px
+  background: -webkit-linear-gradient(right,$orange, $orange, $orange, $orange,  #f8a98a) /* For Safari */
+  background: -o-linear-gradient(right, $orange, $orange, $orange, $orange, #f8a98a) /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(right, $orange, $orange, $orange, $orange, #f8a98a) /* For Fx 3.6 to 15 */
+  background: linear-gradient(to right, $orange, $orange, $orange, $orange, #f8a98a) /* Standard syntax (must be last) */
+
+//END GENERAL
 .nav
   width: 100%
   background: $black
@@ -33,17 +48,7 @@ a
 .navbar
   margin-bottom: 0
 
-.roblaw-title:after
-  content: "" // with out content never see this
-  width: 76px
-  height: 6px
-  position: absolute
-  display: block
-  top: 125%
-  left: 2px
-  background: $orange
-  border-right: 1px solid #f8a98a
-  //z-index: -1
+
 
 #need-an-adventure
   background-image: url("/img/background-im.png")
@@ -61,8 +66,6 @@ a
       right: 0
 
 
-
-
   .orange
     background-color: $orange
     color: $white
@@ -71,22 +74,23 @@ a
     font-size: 1.3em
     margin-top: 3.82em
 
-#we-recruit
-  margin-top: 10%
+.we-recruit
+  margin-top: 5em
   background: rgba(8, 8, 8, 0.4)
-  color: $gray
+  color: $gray-light
   padding-left: 15%
   padding-right: 15%
 
 #job-search, #we-recruit, #labour-now
   .roblaw-title
     color: $white
+  color: $gray-light
 #job-search
   text-align: center
   background-color: $gray-dark
   h2
     font-family: oswald
-    font-size: 37px
+    font-size: 2.6em //37px
     color: $white
   .select
     .btn
@@ -109,26 +113,29 @@ a
   background-color: $black
   a
     margin-right: 2em
-#technical-recruitment
+.technical-recruitment
+  overflow: hidden
+  .container
+    display: inline
   img
-    width: 28em
-  #non-image
-    width: 28em
-    min-height: 19em
-    background-color: $black
-    color: $white
+    float: inherit
+    max-width: 25%
+
 #featured-job
   #miner
+    overflow: hidden
     img
-      display: inline-block
-      width: 750px / 960px * 100%
+      position: relative
+      left: 10%
+
+
   .each-job
     span
       margin-left: 1em
 
 #social-networks
   .media
-    margin: 10px
+    margin: 1em //10px
 
   .media, .bd
     overflow: hidden
@@ -137,19 +144,19 @@ a
 
   .media .img
     float: left
-    margin-right:  10px
-    margin-top:  7px
+    margin-right:  1em //10px
+    margin-top:  0.7em //7px
 
   .media .img img
     display: block
 
   .media .imgExt
     float: right
-    margin-left: 10px
+    margin-left: 1em //10px
 
   .media.twitter
     p
-      margin-bottom: 2px
+      margin-bottom: 0.2em //2px
     .tw-name
       color: $gray-dark
     .tw-occu
@@ -177,7 +184,7 @@ a
     img
       margin-right: 5em
 #wellington-auckland
-  background: url("/img/background-im.png") 0 no-repeat
+  background: url("/img/background-im.png")
   color: $white
   padding-top: 2em
   #contactform
