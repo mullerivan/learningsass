@@ -39,33 +39,54 @@ a {
 
 .nav {
   width: 100%;
-  background: black;
-  align-content: center; }
+  background: black; }
+  @media screen and (min-width: 1600px) {
+    .nav {
+      padding-left: 20%; } }
+  @media screen and (min-width: 1375px) and (max-width: 1600px) {
+    .nav {
+      padding-left: 15%; } }
+  @media screen and (min-width: 1250px) and (max-width: 1375px) {
+    .nav {
+      padding-left: 11%; } }
+  @media screen and (min-width: 1166px) and (max-width: 1250px) {
+    .nav {
+      padding-left: 8%; } }
+  @media screen and (min-width: 1105px) and (max-width: 1166px) {
+    .nav {
+      padding-left: 5%; } }
+  @media screen and (min-width: 1100px) and (max-width: 1105px) {
+    .nav {
+      padding-left: 2%; } }
 
 .navbar {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+  border-bottom: none; }
 
-#need-an-adventure {
+.need-an-adventure {
   background-image: url("/img/background-im.png"); }
-  #need-an-adventure .transparent {
+  .need-an-adventure .transparent {
     background: rgba(36, 36, 36, 0.8);
     color: white;
     margin-top: 5em; }
-    #need-an-adventure .transparent h2 {
+    .need-an-adventure .transparent h2 {
       text-transform: uppercase; }
-    #need-an-adventure .transparent h5 {
+    .need-an-adventure .transparent h5 {
       text-transform: capitalize; }
-    #need-an-adventure .transparent button {
+    .need-an-adventure .transparent button {
       position: absolute;
-      top: 77%;
+      bottom: 0;
       right: 0; }
-  #need-an-adventure .orange {
+  .need-an-adventure .orange {
     background-color: #f15a20;
-    color: white;
-    padding-top: 1.5em;
-    padding-bottom: 1.4em;
+    padding-top: 1.6em;
+    padding-bottom: 1.6em;
     font-size: 1.3em;
     margin-top: 3.82em; }
+    .need-an-adventure .orange p {
+      color: white; }
+  .need-an-adventure p {
+    color: #999999; }
 
 .we-recruit {
   margin-top: 5em;

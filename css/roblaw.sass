@@ -44,14 +44,29 @@ a
 .nav
   width: 100%
   background: $black
-  align-content: center
+  //center navigation
+  @media screen and (min-width: 1600px)
+    padding-left: 20%
+  @media screen and (min-width: 1375px) and (max-width: 1600px)
+    padding-left: 15%
+  @media screen and (min-width: 1250px) and (max-width: 1375px)
+    padding-left: 11%
+  @media screen and (min-width: 1166px) and (max-width: 1250px)
+    padding-left: 8%
+  @media screen and (min-width: 1105px) and (max-width: 1166px)
+    padding-left: 5%
+  @media screen and (min-width: 1100px) and (max-width: 1105px)
+    padding-left: 2%
 .navbar
   margin-bottom: 0
+  border-bottom: none
 
 
 
-#need-an-adventure
+
+.need-an-adventure
   background-image: url("/img/background-im.png")
+
   .transparent
     background: rgba(36, 36, 36, 0.8)
     color: $white
@@ -62,18 +77,19 @@ a
       text-transform: capitalize
     button
       position: absolute
-      top:  77%
+      //top:  77%
+      bottom: 0
       right: 0
-
-
   .orange
     background-color: $orange
-    color: $white
-    padding-top: 1.5em
-    padding-bottom: 1.4em
+    p
+      color: $white
+    padding-top: 1.6em
+    padding-bottom: 1.6em
     font-size: 1.3em
     margin-top: 3.82em
-
+  p
+    color: $gray-light
 .we-recruit
   margin-top: 5em
   background: rgba(8, 8, 8, 0.4)
