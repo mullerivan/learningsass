@@ -4,15 +4,22 @@ $orange: #f15a20
 $red: #ff0000
 $white: #ffffff
 $gray: #7a7881
-$gray-dark: #222222 //#504d53
+$gray-background: #222222
+$gray-btn: #504d53
 $gray-light: #999999 //#d3d3d3
+$gradient: #f8a98a
 //GENERAL
 img
   max-width: 100%
+  height: auto
 .label-red
   color: $red
 .label-orange
   color: $orange
+.label-gray
+  color: $gray
+.label-white
+  color: $white
 .btn
   background: $orange
   color: $white
@@ -35,15 +42,24 @@ a
   display: block
   top: 125%
   left: 0.1em //2px
-  background: -webkit-linear-gradient(right,$orange, $orange, $orange, $orange,  #f8a98a) /* For Safari */
-  background: -o-linear-gradient(right, $orange, $orange, $orange, $orange, #f8a98a) /* For Opera 11.1 to 12.0 */
-  background: -moz-linear-gradient(right, $orange, $orange, $orange, $orange, #f8a98a) /* For Fx 3.6 to 15 */
-  background: linear-gradient(to right, $orange, $orange, $orange, $orange, #f8a98a) /* Standard syntax (must be last) */
-
+  background: $orange
 //END GENERAL
+.job-search, .we-recruit, .labour-now, .technical-recruitment, .footer, .navbar-header, .navbar-collapse
+  background-color: $black
+  .roblaw-title
+    color: $white
+  color: $gray-light
+
+
+
 .nav
   width: 100%
   background: $black
+  img
+    max-height: 2.5em
+  .current-site
+    border: none
+    background-color: $gray-background
   //center navigation
   @media screen and (min-width: 1600px)
     padding-left: 20%
@@ -63,47 +79,48 @@ a
 
 
 
-
 .need-an-adventure
   background-image: url("/img/background-im.png")
-
   .transparent
     background: rgba(36, 36, 36, 0.8)
     color: $white
     margin-top: 5em
+    @media screen and (min-width: 767px) and (max-width: 1050px)
+      margin-top: 8em
     h2
       text-transform: uppercase
     h5
       text-transform: capitalize
     button
       position: absolute
-      //top:  77%
       bottom: 0
       right: 0
   .orange
     background-color: $orange
     p
       color: $white
-    padding-top: 1.6em
-    padding-bottom: 1.6em
+    padding: 1.55em 0.5em 1.55em 1em
     font-size: 1.3em
-    margin-top: 3.82em
+    margin-top: 3.85em
+    @media screen and (min-width: 767px) and (max-width: 1050px)
+      margin-top: 6.15em  //8em-1.6em -border and another things...
+    @media screen and (max-width: 767px)
+      margin-top: 1em //reduce margin when column  collapse
   p
     color: $gray-light
 .we-recruit
-  margin-top: 5em
+  margin-top: 3em
+  //@media screen and (max-width: 768px)
+  //  margin-top: 1em //reduce margin when column  collapse
   background: rgba(8, 8, 8, 0.4)
   color: $gray-light
   padding-left: 15%
   padding-right: 15%
 
-#job-search, #we-recruit, #labour-now
-  .roblaw-title
-    color: $white
-  color: $gray-light
-#job-search
+
+.job-search
   text-align: center
-  background-color: $gray-dark
+  background-color: $gray-background
   h2
     font-family: oswald
     font-size: 2.6em //37px
@@ -112,21 +129,27 @@ a
     .btn
       border: none
       background: $black
-
   .btn
-
+    color: $gray-light
     min-height: 3em
-    background: $gray-dark
-    border-color: $white
+    min-width: 10em
+    @media screen and (min-width: 767px) and (max-width: 1050px)
+      min-width: 7em
+    @media screen and (max-width: 768px)
+      min-width: 5em
+    background: $gray-background
+    border-color:  $gray-light
     margin-left: 0.5em
     margin-right: 0.5em
     margin-bottom: 2em
+  .fa-dollar
+    min-width: 4em
   #search
+    color: $white
     background: $orange
+    min-width: 6em
 
-
-#labour-now
-  background-color: $black
+.labour-now
   a
     margin-right: 2em
 .technical-recruitment
@@ -137,21 +160,24 @@ a
     float: inherit
     max-width: 25%
 
-#featured-job
-  #miner
-    overflow: hidden
+.featured-job
+  position: relative
+  //max-height: 32.5em
+  article
+    display: inline-block
+    margin-bottom: 1em
+  .miner
     img
-      position: relative
-      left: 10%
-
-
+      position: absolute
+      top: -1.2em
+      right: -3em
   .each-job
     span
       margin-left: 1em
 
-#social-networks
+.social-networks
   .media
-    margin: 1em //10px
+    line-height: 1em
 
   .media, .bd
     overflow: hidden
@@ -160,25 +186,14 @@ a
 
   .media .img
     float: left
-    margin-right:  1em //10px
+    margin-right: 0.80em //10px
     margin-top:  0.7em //7px
 
   .media .img img
     display: block
 
-  .media .imgExt
-    float: right
-    margin-left: 1em //10px
-
-  .media.twitter
-    p
-      margin-bottom: 0.2em //2px
-    .tw-name
-      color: $gray-dark
-    .tw-occu
-      color: $gray
-    .tw-link
-      color: $orange
+  .facebook, .tweeter,.linkedin
+    color: $gray
   .facebook
     img
       width: 180px /320px * 100%
@@ -188,18 +203,23 @@ a
         width: 70px /320px * 100%
         height: auto
 
-#currently-recruiting
+.currently-recruiting
+  position: relative
+  height: auto
+  overflow: hidden
   .spanner
     img
-      width: 200px / 460px * 100%
-      height: auto
-      padding-left: 3%
-      padding-bottom: 2%
+      position: absolute
+      top: 1em
+      right: -5em
+      bottom: 1em
+      //padding-left: 3%
+      //padding-bottom: 2%
       z-index: -1
   .more-companies
     img
       margin-right: 5em
-#wellington-auckland
+.wellington-auckland
   background: url("/img/background-im.png")
   color: $white
   padding-top: 2em
@@ -213,11 +233,7 @@ a
       color: $white
       margin-bottom: 1em
 
-
-#footer
+.footer
   padding: 2em 0em 2em 0em
-  background-color: $black
   .social-icons
-    margin-top: 10%
-.section-full-width
-  width: 100%
+    margin-top: 2em //10%

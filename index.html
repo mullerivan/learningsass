@@ -28,7 +28,8 @@
 <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+        <a class="navbar-brand visible-xs" href="#"><span>ROB</span> <span class="label-red">LAW</span> </a>
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-collapse">
             <span class="sr-only">Toggle navigation</span>
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
@@ -37,17 +38,18 @@
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
-    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+    <div class="collapse navbar-collapse" id="navbar-collapse">
         <ul class="nav navbar-nav">
-            <li><a class="navbar-brand" href="#"><span>ROB</span> <span class="label-red">LAW</span> </a></li>
-            <li><a href="#">HOME</a></li>
+            <!--<li><a class="navbar-brand" href="#"><img src="img/roblawlog.png"/> </a></li>-->
+            <li class="hidden-xs" ><a class="navbar-brand" href="#"><span>ROB</span> <span class="label-red">LAW</span> </a></li>
+            <li class="hidden-xs" ><a href="#">HOME</a></li>
             <li><a href="#">ABOUT US</a></li>
             <li><a href="#">JOB SEARCH</a></li>
             <li><a href="#">WORKING NZ</a></li>
             <li><a href="#">CONTACT</a></li>
             <li><a href="#"><span class="label-orange">Sing in</span></a></li>
-            <li><a href="#">/Register</a></li>
-            <li class="dropdown">
+            <li><a href="#"><span class="label-white">/Register</span></a></li>
+            <li class="dropdown current-site">
                 <a href="#" class="dropdown-toggle" data-toggle="dropdown">
                     <span class="label-orange">CURRENT SITE </span> ROB LAW MAX <b class="caret"></b>
                 </a>
@@ -75,7 +77,7 @@
                 <p>New Zealand's leading Technical & industry</p>
 
                 <p>Recruitment Agency</p>
-                <button type="button" class="btn hidden-xs">SEARCH JOBS</button>
+                <button type="button" class="btn visible-lg">SEARCH JOBS</button>
             </div>
             <div class="col-sm-4 orange">
                 <p>We have <span class="bold"> 500+ Engineering Technical & Infrastructure Jobs </span> waiting right
@@ -120,86 +122,65 @@
 
 </div>
 
-<div class="section-container" id="job-search">
+<div class="job-search section-container">
     <div class="container">
         <div class="row">
             <div class="col-sm-12 col-lg-12">
                 <h2>JOB SEARCH</h2>
 
                 <div class="btn-group select">
-                    <button type="button" class="btn btn-default">Keyword</button>
-                    <button type="button" class="btn btn-default fa fa-map-marker">All locations</button>
-                    <button type="button" class="btn btn-default fa fa-pencil">All Categories</button>
-                    <button type="button" class="btn btn-default fa fa-clock-o">All Job types</button>
-                    <button type="button" class="btn btn-default fa fa-dollar"></button>
-                    <button type="button" class="btn btn-default" id="search">Search</button>
+                    <button type="button" class="btn btn-">Keyword</button>
+                    <button type="button" class="btn fa fa-map-marker">All locations</button>
+                    <button type="button" class="btn fa fa-pencil">All Categories</button>
+                    <button type="button" class="btn fa fa-clock-o">All Job types</button>
+                    <button type="button" class="btn fa fa-dollar"></button>
+                    <button type="button" class="btn " id="search">Search</button>
                 </div>
             </div>
         </div>
         <div class="row">
             <div class="col-sm-12 col-lg-12">
                 <div class="btn-group">
-                    <button type="button" class="btn btn-default">Browser all jobs</button>
-                    <button type="button" class="btn btn-default">Register with us</button>
+                    <button type="button" class="btn ">Browser all jobs</button>
+                    <button type="button" class="btn ">Register with us</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
 
-<div class="section-container" id="featured-job">
+<div class="featured-job section-container">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
                 <h2 class="roblaw-title">Featured Jobs</h2>
 
-                <div class="each-job">
-                    <h4>
-                        <a href="/jobs/pb54109-civil-project-engineer3s-manager">
+                <article class="each-job">
+                    <h4><a href="#">
                             Civil Project Engineer/3s Manager
                         </a>
                     </h4>
-
-                    <p>
                         <span class="glyphicon glyphicon-globe"></span> Auckland
                         <span class="glyphicon glyphicon-pencil"></span> Engineering
                         <span class="glyphicon glyphicon-tag"></span> Contract and Permanent
-
-                    </p>
-
-                    <p>
-                        Experienced Civil Project Engineer/3s Manager required for Auckland based 3.
-                        <br>
-                        <a class="btn btn-default" href="http://www.roblawmax.co.nz/my-profile/apply/pb54109">Apply
-                            now</a>
-                    </p>
+                    <p>Experienced Civil Project Engineer/3s Manager required for Auckland based 3.</p>
+                    <button type="button" class="btn ">APPLY NOW </button>
+                </article>
                     <hr>
-                </div>
-                <div class="each-job">
 
+                <article class="each-job">
                     <h4>
-                        <a href="/jobs/pb54109-civil-project-engineer3s-manager">
-                            Civil Project Engineer/3s Manager
-                        </a>
+                        <a href="#">Civil Project Engineer/3s Manager</a>
                     </h4>
-
-                    <p>
                         <span class="glyphicon glyphicon-globe"></span> Auckland
                         <span class="glyphicon glyphicon-pencil"></span> Engineering
                         <span class="glyphicon glyphicon-tag"></span> Contract and Permanent
+                    <p>Experienced Civil Project Engineer/3s Manager required for Auckland based 3.</p>
+                    <button type="button" class="btn ">APPLY NOW </button>
+                </article>
 
-                    </p>
-
-                    <p>
-                        Experienced Civil Project Engineer/3s Manager required for Auckland based 3.
-                        <br>
-                        <a class="btn btn-default" href="http://www.roblawmax.co.nz/my-profile/apply/pb54109">Apply
-                            now</a>
-                    </p>
-
-                </div>
             </div>
-            <div class="col-sm-6 hidden-xs" id="miner">
+            <div class="miner col-sm-6 hidden-xs">
                 <img src="img/miner.png" alt="miner">
             </div>
 
@@ -207,7 +188,7 @@
     </div>
 </div>
 
-<div class="section-container" id="labour-now">
+<div class="labour-now section-container">
     <div class="container">
         <div class="row">
             <div class="col-sm-6">
@@ -225,7 +206,9 @@
                     Our consultants are energetic, empathetic, knowledgeable, experienced and extremely talented –
                     we understand your needs and will ‘go the extra mile’ to ensure your satisfaction.</p>
 
-                <a class="bold">Looking for a labouring job?</a> <a class="bold">Need contract labour hire?</a>
+                <div class="col-sm-6"> <a class="bold">Looking for a labouring job?</a> </div>
+                <div class="col-sm-6"> <a class="bold">Need contract labour hire?</a> </div>
+
             </div>
         </div>
     </div>
@@ -252,79 +235,74 @@
     </div>
 </div>
 
-<div class="section-container hidden-xs" id="social-networks">
+<div class="social-networks section-container hidden-xs" >
     <div class="container">
         <div class="row">
-            <div class="col-sm-4 tweeter"> <!-- fijate de usar las classes de bootstrap para el grid, asi sale mas facil
-                            van a ser asi: xs -> pantallas extra-small
-                                            sm -> small
-                                            md -> medium
-                                            sajlnraoisndofainsdoifnaosdinf!!!!!!
-                            aca tenes bien cuales son los cortes: http://getbootstrap.com/css/#grid-options -->
+            <div class="col-sm-4 tweeter">
                 <h2 class="roblaw-title">Latest Tweets</h2>
                 <!-- that is  media object: http://www.stubbornella.org/content/2010/06/25/the-media-object-saves-hundreds-of-lines-of-code/ -->
-                <div class="media attribution twitter">
+                <div class="media attribution">
                     <a href="#" class="img">
                         <img src="img/twitter-light.png"/>
                     </a>
-
                     <div class="bd">
-                        <p><a href="#" class="tw-name">Patrick Quin @patquin</a></p>
-
-                        <p class="tw-occu">Wellington - Senior Structural Engineer</p>
-
+                        <p><a href="#" class="bold label-gray">Patrick Quin @patquin</a></p>
+                        <p>Wellington - Senior Structural Engineer</p>
                         <p><a href="http://lnkd.in/b5u6k69" class="tw-link">http://lnkd.in/b5u6k69</a></p>
                     </div>
                 </div>
-                <div class="media attribution each-twitter">
+                <div class="media attribution">
                     <a href="#" class="img">
                         <img src="img/twitter-light.png"/>
                     </a>
-
                     <div class="bd">
-                        <p><a href="#" class="tw-name">Patrick Quin @patquin</a></p>
-
-                        <p class="tw-occu">Wellington - Senior Structural Engineer</p>
-
+                        <p><a href="#" class="bold label-gray">Patrick Quin @patquin</a></p>
+                        <p>Wellington - Senior Structural Engineer</p>
                         <p><a href="http://lnkd.in/b5u6k69" class="tw-link">http://lnkd.in/b5u6k69</a></p>
                     </div>
                 </div>
-                <div class="media attribution each-twitter">
-                    <a href="#" class="img">
-                        <img src="img/twitter-light.png"/>
-                    </a>
-
+                <div class="media attribution">
+                    <a href="#" class="img"><img src="img/twitter-light.png"/> </a>
                     <div class="bd">
-                        <p><a href="#" class="tw-name">Patrick Quin @patquin</a></p>
-
-                        <p class="tw-occu">Wellington - Senior Structural Engineer</p>
-
+                        <p><a href="#" class="bold label-gray">Patrick Quin @patquin</a></p>
+                        <p>Wellington - Senior Structural Engineer</p>
                         <p><a href="http://lnkd.in/b5u6k69" class="tw-link">http://lnkd.in/b5u6k69</a></p>
                     </div>
                 </div>
-
             </div>
             <div class="col-sm-4 linkedin">
-                <h2 class="roblaw-title">Linkedin </h2>
+                <h2 class="roblaw-title">linkedin </h2>
+                <div class="media attribution">
+                    <a href="#" class="img">
+                        <img  src="img/rowlaw.png"> </img>
+                    </a>
+                    <div class="bd">
+                        <p>Wellington - Senior Structural</p>
+                        <p>Engineer <a href="mullerivan.com.ar">http://Lnkd.ini/b34ssd</a></p>
+                    </div>
+                </div>
+                <div class="media attribution">
+                    <a href="#" class="img">
+                        <img  src="img/rowlaw.png"> </img>
+                    </a>
+                    <div class="bd">
+                        <p>Wellington - Senior Structural</p>
+                        <p>Engineer <a href="mullerivan.com.ar">http://Lnkd.ini/b34ssd</a></p>
+                    </div>
+                </div>
+                <div class="media attribution">
+                    <a href="#" class="img">
+                        <img  src="img/rowlaw.png"> </img>
+                    </a>
+                    <div class="bd">
+                        <p>Wellington - Senior Structural</p>
+                        <p>Engineer <a href="mullerivan.com.ar">http://Lnkd.ini/b34ssd</a></p>
+                    </div>
+                </div>
 
-                <div class="media attribution each-linkedin">
-                    <img class="linkedin-img" src="img/rowlaw.png"> </img>
-                    <span>Wellington - Senior Structural</span><br>
-                    <span>Engineer <a href="mullerivan.com.ar">http://Lnkd.ini/b34ssd</a></span>
-                </div>
-                <div class="media attribution each-linkedin">
-                    <img class="linkedin-img" src="img/rowlaw.png"> </img>
-                    <span>Wellington - Senior Structural</span><br>
-                    <span>Engineer <a href="mullerivan.com.ar">http://Lnkd.ini/b34ssd</a></span>
-                </div>
-                <div class="media attribution each-linkedin">
-                    <img class="linkedin-img" src="img/rowlaw.png"> </img>
-                    <span>Wellington - Senior Structural</span><br>
-                    <span>Engineer <a href="mullerivan.com.ar">http://Lnkd.ini/b34ssd</a></span>
-                </div>
             </div>
             <div class="col-sm-4 facebook">
-                <h2 class="roblaw-title">Facebook</h2>
+                <h2 class="roblaw-title">facebook</h2>
 
                 <div class="media attribution each-facebook">
                     <img class="facebook-img" src="img/rowlaw2.png"> </img>
@@ -340,7 +318,9 @@
     </div>
 </div>
 
-<div class="section-container" id="currently-recruiting">
+<hr>
+
+<div class="currently-recruiting section-container" >
     <div class="container">
         <div class="row">
             <div class="col-sm-8">
@@ -351,8 +331,8 @@
                 <span class="label-orange"> velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore </span>
                 magnam aliquam quaerat voluptatem.</span>
             </div>
-            <div class="col-sm-4 hidden-xs">
-                <img src="img/spanner.png" alt="spanner" class="spanner"> </img>
+            <div class="spanner col-sm-4 hidden-xs">
+                <img src="img/spanner.png" alt="spanner" > </img>
             </div>
         </div>
         <div class="row">
@@ -380,7 +360,7 @@
     </div>
 </div>
 
-<div class="section-container" id="wellington-auckland">
+<div class="wellington-auckland section-container" >
     <div class="container">
         <div class="row">
             <div class="col-sm-4" id="wellington">
@@ -448,7 +428,7 @@
     </div>
 </div>
 
-<div class="section-container" id="footer">
+<div class="footer section-container" >
     <div class="container">
         <div class="row">
             <div class="col-sm-4">
